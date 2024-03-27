@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Empleados</title>
+    <style>
+        h1{
+            font-family: cursive;
+            text-align: center;
+            padding: 15px;
+        }
+        /* Estilos generales del formulario */
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilos para los campos de texto y el área de texto */
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Estilos para el botón de envío */
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #F58300;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #901AF0;
+            }
+
+        /* Estilos para las etiquetas */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Empleados</h1>
+    <form action="ruta_a_tu_script_de_procesamiento" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="departamento">Departamento:</label>
+        <input type="text" id="departamento" name="departamento" required>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
